@@ -6,13 +6,20 @@
     
    }
 
+
 .mainlist {
     list-style: none;
 }
 
+.maintitle,
 .title {
     text-decoration-line: underline;
     font-size: 48px;
+    display: inline-block; 
+}
+
+.title {
+    margin-left: 200px;  
 }
 
 li {
@@ -23,10 +30,16 @@ li {
 .images {
     width: 200px;
     height: auto;
+    transition: border-color 0.2s;
+    
+}
+
+.images:hover {
+    border-color: white;
 }
 
 .gradient {
-    background: rgb(2,0,36);
+    
     background: linear-gradient(90deg, 
     rgba(2,0,36,1) 0%, rgba(151,188,238,1) 0%, 
     rgba(169,185,236,1) 49%, rgba(0,212,255,1) 95%); 
@@ -36,12 +49,15 @@ li {
 .siteimg {
     width: 300px;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .recipelist {
     display: table;
     margin: 0 auto;
     text-align: left;
+    
 }
 
 a {
@@ -54,6 +70,16 @@ a {
     border: 2px solid black;
     padding: 10px;
     border-radius: 14px;
+    transition: border-color 0.2s;
+    float: right;
+    
+    
+}
+
+
+
+.return:hover {
+    border-color: white; 
 }
 
 img {
@@ -65,5 +91,83 @@ img {
 p {
     font-size: 22px;
 }
+
+.rightlayout {
+    float: left;
+    margin-left: 80px;
+    
+}
+
+.rightlayout a {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* .rightlayout a:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+} */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.icons {
+    margin-top: 25px;
+    
+}
+
+.social-icon {
+    color: #333333;
+    transition: color 0.2s;
+    margin-right: 15px;
+    font-size: 60px;
+}
+
+.social-icon:hover {
+    color: white;
+}
+
+.ingr {
+    display: inline-block;
+}
+
+.ingr h2 {
+    margin-left: -80px;
+}
+
+.howtomake {
+    display: inline-block;
+    margin-left: 40px;
+    
+}
+
+.howtomakelist {
+    margin-right: -340px;
+}
+
+.howtomakesb h2 {
+    margin-right: -60px;
+}
+
+.ingrsb h2 {
+    margin-left: -20px;
+}
+
+.howtomakefp h2{
+    margin-right: 235px;
+}
+
+.ingrfp h2{
+    margin-left: -70px;
+}
+
+
 
 
